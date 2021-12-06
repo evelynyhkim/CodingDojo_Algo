@@ -14,6 +14,7 @@ console.log(arr)
 
 /* rotate */
 if(shiftBy > 0){
+    shiftBy %= len
     for(let j = 0; j < shiftBy; j++){
         let i = len-1-j
         temp = arr[i]
@@ -24,6 +25,7 @@ if(shiftBy > 0){
     }
 }
 else if(shiftBy < 0) {
+    shiftBy = -1 * (Math.abs(shiftBy) % len)
     for(let j = 0; j < -shiftBy; j++){
         let i = j
         temp = arr[i]
