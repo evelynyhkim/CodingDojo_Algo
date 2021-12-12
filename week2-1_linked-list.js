@@ -32,7 +32,7 @@ class Node {
 }
 
 /* test case */
-let sll = new SLL
+let sll = new SLL()
 console.log(sll.removeFront())
 console.log(sll.addFront(3))
 console.log(sll.addFront(2))
